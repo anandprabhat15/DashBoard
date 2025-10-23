@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-const API_KEY = "PMAK-68b700faca7fac00013f00e2-a6e366d49575ac6a39683c9598aaaeb7dc";
-const BASE_URL = "https://d473b897-ef30-4a6b-bbde-58e8ef1a8bd2.mock.pstmn.io";
+const API_KEY = import.meta.env.VITE_API_KEY;
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 const api = axios.create({
   baseURL: BASE_URL,
