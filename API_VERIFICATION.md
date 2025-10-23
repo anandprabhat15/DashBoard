@@ -134,16 +134,29 @@ I have thoroughly reviewed all components and can confirm that **ALL data is fet
 
 **File:** `src/services/api.jsx`
 
+<<<<<<< HEAD
 ```javascript
 const API_KEY =
   "PMAK-68b700faca7fac00013f00e2-a6e366d49575ac6a39683c9598aaaeb7dc";
 const BASE_URL = "https://d473b897-ef30-4a6b-bbde-58e8ef1a8bd2.mock.pstmn.io";
+=======
+The API credentials are stored in environment variables for security:
+
+```javascript
+const API_KEY = import.meta.env.VITE_API_KEY;
+const BASE_URL = import.meta.env.VITE_BASE_URL;
+>>>>>>> b3307873c4767bccf73e156d5ec2866f5f5d5113
 ```
 
 **To Change API:**
 
+<<<<<<< HEAD
 1. Update `API_KEY` in `src/services/api.jsx`
 2. Update `BASE_URL` in `src/services/api.jsx`
+=======
+1. Update `VITE_API_KEY` in `.env` file
+2. Update `VITE_BASE_URL` in `.env` file
+>>>>>>> b3307873c4767bccf73e156d5ec2866f5f5d5113
 3. Ensure new API has same endpoint structure:
    - `/list/tasks`
    - `/user/info`
